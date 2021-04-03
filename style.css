@@ -1,0 +1,12 @@
+ul.notation-list {
+  display: flex;
+}
+
+ul.notation-list li {
+  flex-direction: row;
+  list-style: none;
+}
+
+button.input {
+  border-radius: 30%;
+}
