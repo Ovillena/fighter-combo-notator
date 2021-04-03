@@ -9,9 +9,12 @@ function db_connect()
     // TODO
     // try to open database connection using constants set in config.php
     // return $pdo;
-    $connection = "mysql:host=127.0.0.1;dbname=a8;port=3336";
-    $user = DBUSER;
-    $pass = DBPASS;
+    // $connection = "mysql:host=127.0.0.1;dbname=a8;port=3336";
+    // $user = DBUSER;
+    // $pass = DBPASS;
+    $connection = "mysql:us-cdbr-east-03.cleardb.com;dbname=heroku_7749c977e885ae5";
+    $user = "b728991b53f1ce";
+    $pass = "e09b046c";
     $pdo = new PDO($connection, $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     return $pdo;
